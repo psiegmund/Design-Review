@@ -1,0 +1,322 @@
+@font-face {
+    font-family: "Graphik medium";
+    src: url(../fonts/Graphik-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Graphik regular";
+    src: url(../fonts/Graphik-Regular.woff);
+}
+
+@font-face {
+    font-family: "TiemposHeadline";
+    src: url(../fonts/TiemposHeadline-Semibold.woff);
+}
+
+@font-face {
+    font-family: "Theinhardt";
+    src: url(../fonts/Theinhardt-Lt.woff);
+}
+
+/* ASSETS
+Farben: #2B2C2E /  #9FA2A7 / #27282A /  #848689 / #3D3E41 / #fff
+
+font-family: "Theinhardt", sans-serif;
+font-family: "TiemposHeadline", sans-serif;
+font-family: "Graphik regular", sans-serif;
+font-family: "Graphik medium", sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-family: "TiemposHeadline", sans-serif;
+    font-size: 7rem;
+}
+
+h2 {
+    font-family: "Graphik medium", sans-serif;
+    font-size: 2.8rem;
+}
+
+.standardText {
+    font-family: "Theinhardt", sans-serif;
+    font-size: 2.5rem;
+    color: #9fa2a7;
+}
+
+
+/* ======================
+Header Styling
+========================= */
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 5vw;
+    font-size: 1.5rem
+}
+
+#nav nav ul {
+    display: flex;
+    gap: 1vw;
+    list-style: none;
+    font-family: "Graphik regular", sans-serif;
+}
+
+#nav p {
+    font-family: "TiemposHeadline", sans-serif;
+    font-size: 2.5rem;
+}
+
+#nav button {
+    font-family: "Graphik medium", sans-serif;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 5px 30px;
+}
+
+#hero p {
+    font-family: "Graphik regular", sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 7vh 0;
+}
+
+#hero img {
+    width: 100%;
+}
+
+#hero article {
+    display: flex;
+    margin: 20vh 0;
+}
+
+#hero div p {
+    display: block;
+    line-height: 1.4;
+    font-size: 2.3rem;
+    text-align: left;
+    margin: 0;
+}
+
+#hero article div:first-child {
+    margin: 0 3vw 0 7vw;
+    flex-basis: 57%;
+}
+
+#hero article div:first-child p {
+    font-family: "Graphik medium", sans-serif;
+}
+
+#hero article div:last-child {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    height: 10vh;
+    flex-basis: 10%;
+}
+
+#hero article div:last-child p {
+    font-family: "Theinhardt", sans-serif;
+}
+
+#hero article div:nth-of-type(2) p:nth-of-type(1) {
+    font-size: 5rem;
+}
+
+#hero article div:nth-of-type(2) p:nth-of-type(2) {
+    font-size: 1.3rem;
+    margin: 0.5vh 0 0 0;
+    color: #9fa2a7;
+}
+
+
+/* ======================
+Main Styling
+========================= */
+
+/* ===========Section deliverables=========== */
+
+#deliverables {
+    display: flex;
+    justify-content: center;
+}
+
+#deliverables div:first-child {
+    flex-basis: 40%;
+}
+
+#deliverables div:last-child {
+    margin: 0 0 0 2vw;
+    flex-basis: 47%;
+}
+
+#deliverables div img {
+    width: 100%;
+}
+
+#deliverables h1 {
+    margin: 0 0 6vh 0;
+}
+
+#deliverables h2 {
+    margin: 3vh 0;
+}
+
+/* ===========Section howItWorks=========== */
+
+#howItWorks {
+    display: flex;
+    justify-content: center;
+    background-color: lightgray;
+    margin: 15vh 5vw;
+}
+
+#howItWorks div:first-child {
+    flex-basis: 50%;
+}
+
+#howItWorks div:last-child {
+    margin: 0 0 0 2vw;
+    flex-basis: 40%;
+}
+
+#howItWorks ol {
+    padding-left: 4vw;
+}
+
+#howItWorks div img {
+    position: absolute;
+    width: 45%;
+    right: 3vw;
+}
+
+#howItWorks h1:first-of-type {
+    margin: 3vh 0 4vh 0;
+    padding: 5vh 0 0 0;
+}
+
+#howItWorks p:last-of-type {
+    margin: 0vh 0 8vh 0;
+}
+
+#howItWorks h2 {
+    margin: 3vh 0;
+}
+
+/* ===========Section howItWorks=========== */
+
+#critique>div {
+    background-color: blue;
+    text-align: center;
+    padding: 20vh;
+}
+
+#top p {
+    background-color: red;
+}
+
+#bottom {
+    display: flex;
+}
+
+/* #critique div:nth-child(1) p:nth-child(1) {
+    background-color: red;
+    margin: 5vh 0 0 0;
+}
+
+#critique div:nth-of-type(1)p:nth-of-type(2) {
+    background-color: pink;
+    margin: 0 0 5vh 0;
+} */
+
+#article p {
+    background-color: green;
+}
+
+/* #critique div:nth-child(1) {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#critique div:nth-of-type(2) {
+    background: green;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#critique h1 {
+    text-align: center;
+    margin: 6vh 0;
+}
+
+#critique p {
+    text-align: center;
+}
+
+#critique p:nth-of-type(2) {
+    margin: 0 0 15vh;
+}
+
+#critique img {
+    width: 100%;
+}
+
+#critique article {
+    display: flex;
+    position: absolute;
+    top: 100px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#critique article div:nth-child(1) {
+    flex-basis: 30%;
+    margin: 0;
+    padding: 0;
+}
+
+#critique article div:nth-child(2) {
+    flex-basis: 50%;
+    top: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+#critique article div p {
+    text-align: left;
+    width: 100%;
+    background-color: tomato;
+}
+
+#critique article img {
+    background-color: green;
+    width: 100%;
+} */
+
+
+
+
+/* ======================
+Footer Styling
+========================= */
+
+
+
+/* ======================
+Media Queries
+========================= */
+
+@media only screen and (max-width:600px) {
