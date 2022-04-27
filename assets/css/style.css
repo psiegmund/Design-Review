@@ -216,129 +216,137 @@ Main Styling
     margin: 3vh 0;
 }
 
-/* ===========Section howItWorks=========== */
+/* ===========Section critique=========== */
 
 #critique>div {
     text-align: center;
-    padding: 20vh;
+    padding: 5vh 0 0 0;
 }
 
-#top p {
-    background-color: red;
-}
-
-#bottom article {
-    background: yellow;
-    display: flex;
+#bottom {
     position: relative;
 }
 
-#bottom div {
-    position: absolute;
-}
-
-#bottom div:nth-of-type(1) {
-    background-color: pink;
-    top: -200px;
-    z-index: 3;
-}
-
-#bottom div:nth-of-type(2) {
-    background-color: orange;
-    width: 30vw;
-    z-index: 4;
-}
-
-#bottom div:nth-of-type(3) {
-    top: 0px;
-    z-index: 3;
-}
-
-/* #critique div:nth-child(1) p:nth-child(1) {
-    background-color: red;
+#bottom div:first-of-type {
+    background: url('../img/28.png') center / cover no-repeat;
+    padding: 20vh 0;
     margin: 5vh 0 0 0;
 }
 
-#critique div:nth-of-type(1)p:nth-of-type(2) {
-    background-color: pink;
-    margin: 0 0 5vh 0;
-} */
-
-/* #article p {
-    background-color: green;
-} */
-
-/* #critique div:nth-child(1) {
-    width: 50%;
-    margin: 0 auto;
-}
-
-#critique div:nth-of-type(2) {
-    background: green;
-    width: 50%;
-    margin: 0 auto;
-}
-
-#critique h1 {
-    text-align: center;
-    margin: 6vh 0;
-}
-
-#critique p {
-    text-align: center;
-}
-
-#critique p:nth-of-type(2) {
-    margin: 0 0 15vh;
-}
-
-#critique img {
-    width: 100%;
-}
-
-#critique article {
-    display: flex;
-    position: absolute;
-    top: 100px;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#critique article div:nth-child(1) {
-    flex-basis: 30%;
-    margin: 0;
-    padding: 0;
-}
-
-#critique article div:nth-child(2) {
-    flex-basis: 50%;
-    top: 10px;
-    margin: 0;
-    padding: 0;
-}
-
-#critique article div p {
+#bottom>div:nth-of-type(2) p {
     text-align: left;
-    width: 100%;
-    background-color: tomato;
+    position: relative;
+    margin: 0 40% 0 15%;
+    font-family: "Graphik medium", sans-serif;
+    line-height: 2;
 }
 
-#critique article img {
-    background-color: green;
-    width: 100%;
-} */
+#bottom>div:nth-of-type(2) div {
+    background: url('../img/home_conversion.png') center / 100% no-repeat;
+    position: absolute;
+    bottom: -17vh;
+    right: 5vw;
+    padding: 20vh 0;
+    width: 45%;
+}
 
-
-
+/* ===========Section questions=========== */
 
 /* ======================
 Footer Styling
 ========================= */
 
+#footer {
+    text-align: center;
+    margin: 30vh 5vw 0;
+    padding: 10vh 20vw 0;
+    border-top: 1px solid red;
+}
+
+#footer h1 {
+    padding: 0 0 5vh;
+}
+
+#footer div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 0 5vh;
+}
+
+#footer div img {
+    width: 10vw;
+}
+
+#footer a {
+    text-decoration: none;
+    font-family: "Graphik medium", sans-serif;
+    color: #000;
+}
 
 
 /* ======================
 Media Queries
 ========================= */
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:390px) {
+
+    html {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    #nav {
+        display: block;
+        text-align: center;
+    }
+
+    #nav ul {
+        justify-content: space-evenly;
+    }
+
+    #nav p {
+        margin: 5vh 0;
+        font-size: 4rem;
+    }
+
+    #nav button {
+        padding: 50px 100px
+    }
+
+    #hero article {
+        display: block;
+    }
+
+    #hero article div:first-child p,
+    #hero article div:nth-of-type(2) p:nth-of-type(1),
+    #hero article div:nth-of-type(2) p:nth-of-type(2) {
+        text-align: center;
+        margin: 1vh 0;
+    }
+
+    #deliverables {
+        display: block;
+    }
+
+    #deliverables div img {
+        text-align: center;
+    }
+
+    #howItWorks {
+        display: block;
+    }
+
+    #howItWorks div img {
+        position: relative;
+        width: 80%;
+        margin: 0 0 5vh 0;
+    }
+
+    #bottom div:first-of-type {
+        background-size: 100%;
+    }
+}
